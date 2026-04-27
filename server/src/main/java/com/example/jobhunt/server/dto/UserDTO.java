@@ -1,0 +1,25 @@
+package com.example.jobhunt.server.dto;
+
+import com.example.jobhunt.server.entity.User;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDTO {
+    private long id;
+    private String name;
+    private String email;
+    private String password;
+    private AccountType accountType;
+    private String jwtToken;
+    private String gender;
+
+    public User toEntity() {
+        return new User(this.id, this.name, this.email, this.password, this.accountType, this.gender);
+    }
+}
