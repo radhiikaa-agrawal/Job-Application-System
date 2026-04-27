@@ -1,0 +1,23 @@
+# Node.js
+client/node_modules/
+client/dist/
+client/build/
+.env
+
+# Java/Maven
+server/target/
+server/.mvn/
+server/*.jar
+server/*.war
+server/*.ear
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.log
+.DS_Store
+
+# Misc
+temp/
+bin/
